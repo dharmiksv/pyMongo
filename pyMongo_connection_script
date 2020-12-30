@@ -1,0 +1,8 @@
+from pymongo import MongoClient
+client = MongoClient("mongodb://localhost:27017/trips")
+db=client["dbName"]
+
+#test
+db.collectionName.insert_one({key:value})
+
+
